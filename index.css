@@ -1,4 +1,3 @@
-/* styles.css */
 body {
     margin: 0;
     font-family: sans-serif;
@@ -7,6 +6,7 @@ body {
 }
 
 .wrapper {
+   
     margin-bottom: 100px;
     background-color: rgb(215, 180, 147);
     display: flex;
@@ -56,15 +56,26 @@ h2 {
 }
 
 #hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
     background-color: #fff;
-    text-align: center;
+    
     padding: 5rem 1rem;
     border-radius: 30px;
     margin: 5px;
     box-shadow: 2px 5px 5px rgba(70, 68, 68, 0.358);
 }
 
+.pic2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:30px;
+}
 #hero h1 {
+  
     margin: 0;
     font-size: 2.5rem;
 }
@@ -162,13 +173,30 @@ h2 {
 
 }
 
-.content div div #karo{
- 
-    height: 40px;
-    width: 40px;
+#karo {
+    text-align: center;
+}
 
+#karo > div {
+    display: inline-block;
 
 }
+
+.logo1{
+    display: flex;
+    flex-direction: row;
+justify-content: center;
+    
+}
+
+#para{
+    padding-top: 70px;
+    padding-left: 350px;
+    padding-right: 350px;
+    align-items: center;
+    color: #6e6c6c;
+}
+
 
 footer {
     background-color: #333;
@@ -179,3 +207,213 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+/* General Footer Styles */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    background-color: #e9e9e9;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container__item {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer-container__item__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-container__item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-container__item li {
+    margin-bottom: 8px;
+    color: #555;
+    font-size: 16px;
+}
+
+
+.see-all-apps__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-container__item {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hero {
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    .feature {
+        width: 100%;
+        margin: 1% 0;
+    }
+
+    .pic2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content {
+        margin: 50px 20px 0 20px;
+    }
+
+    .content div {
+        width: 100%;
+    }
+
+    #karo {
+        text-align: center;
+    }
+    
+    #karo > div {
+        display: inline-block;
+    
+    }
+    
+    #para {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer-container__item {
+        margin-bottom: 20px;
+    }
+
+    .see-all-apps__download-container img {
+        max-width: 100px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .right {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #hero {
+        flex-direction: row;
+        padding: 4rem 1rem;
+    }
+
+    #hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .feature {
+        width: 45%;
+        margin: 1%;
+    }
+
+    .pic2 {
+        gap: 25px;
+    }
+
+    .content {
+        margin: 80px 30px 0 30px;
+    }
+
+    .content div {
+        width: 100%;
+    }
+
+    #para {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .wrapper {
+        margin-bottom: 100px;
+    }
+
+    .right {
+        gap: 20px;
+    }
+
+    #hero {
+        padding: 5rem 2rem;
+    }
+
+    .feature {
+        width: 30%;
+        margin: 1%;
+    }
+
+    .pic2 {
+        gap: 30px;
+    }
+
+    .content {
+        margin: 120px 50px 0 50px;
+    }
+
+    #para {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+}
+
+
