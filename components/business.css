@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.section{
+    box-sizing: border-box;
+}
+
+.content{
+    background-image: linear-gradient(to right, #a064d5 0%, #c25f3d 100%);
+    
+
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+    padding-left: 50px;
+    border: 1px solid black;
+    height: 400px;
+    width:95%;
+}
+h1{
+    color: azure;
+}
+
+
+
+.bussol-herobanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #f4f4f4; /* Background color for the banner */
+    padding: 20px;
+}
+
+.bussol-herobanner__bg {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 21%; /* Aspect ratio */
+    overflow: hidden;
+}
+
+.gatsby-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.bussol-herobanner__content {
+    margin-top: 20px;
+}
+
+.bussol-herobanner__content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.bussol-herobanner__content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.bussol-herobanner__content__numbers {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.bussol-herobanner__content__numbers li {
+    margin: 0 20px;
+    font-size: 1.2em;
+}
+
+.bussol-herobanner__content__numbers p {
+    font-size: 2em;
+    margin: 0;
+}
+
+.bussol-herobanner__content__numbers span {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.bussol-herobanner__img {
+    margin-top: 20px;
+    width: 100%;
+    height: 0;
+    padding-bottom: 62%; /* Aspect ratio */
+    overflow: hidden;
+}
+
+.bussol-herobanner__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: right center;
+}
